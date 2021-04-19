@@ -10,7 +10,7 @@ args = args.parse_args()
 
 
 def command_gen(name) :
-    command_file = open("command.txt","w")
+    command_file = open("command/command-{}.txt".format(name),"w")
     print("Generating command")
     
     for names in glob.glob("data/*"):
